@@ -1,0 +1,6 @@
+
+
+graphql:
+    packages:
+        - "fr.prez.graphql.query"
+        - "fr.prez.graphql.dto"
