@@ -11,7 +11,6 @@ import javax.persistence.Table
 
 
 @Entity
-@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 @Table(name = "t_adresse")
 data class Adresse (
         @Id

@@ -16,4 +16,5 @@ class BatimentQuery(val batimentQlService: BatimentQlService) : Query {
         return batimentQlService.findByRef(ref)
     }
 
+
 }

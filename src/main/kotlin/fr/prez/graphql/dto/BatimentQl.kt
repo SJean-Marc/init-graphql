@@ -1,6 +1,6 @@
 package fr.prez.graphql.dto
 
-data class BatimentQl(
+open class BatimentQl(
     var id: Long? = null,
     var ref: String? = null
 ) {

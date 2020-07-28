@@ -3,6 +3,7 @@ package fr.prez.graphql.service
 import fr.prez.graphql.dto.BatimentQl
 import fr.prez.graphql.mapper.Mapper
 import fr.prez.graphql.repository.BatimentRepository
+import fr.prez.graphql.repository.EscalierRepository
 import org.mapstruct.factory.Mappers
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
