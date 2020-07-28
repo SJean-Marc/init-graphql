@@ -11,7 +11,7 @@ import javax.persistence.Table
 
 
 @Entity
-@Table(name = "t_etage_eta")
+@Table(name = "t_etage")
 class Etage {
     @Id
     var id: Long? = null

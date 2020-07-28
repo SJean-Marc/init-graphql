@@ -8,4 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository
 interface EtageRepository:
         JpaRepository<Etage, Long> {
     fun findByRef(ref : String) : List<Etage>
+    fun findByEscalier_IdAndAndRef(idEscalier : Long, ref: String) : List<Etage>
 }

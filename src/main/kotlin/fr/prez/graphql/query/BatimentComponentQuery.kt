@@ -26,13 +26,11 @@ class BatimentComponentQuery(@GraphQLIgnore val batimentQl: BatimentQl,
         BeanUtils.copyProperties(batimentQl, this)
     }
 
-    fun escalier(refEscalier: String?,
-                 environment: DataFetchingEnvironment): List<EscalierComponentQuery>? {
-        val fieldsToDisplay = environment.selectionSet.get().keys
+    fun escalier(refEscalier: String?): List<EscalierComponentQuery>? {
         return escalierQlService
-                .findByBatimentAndFields(fieldsToDisplay, this, refEscalier)
+                .findByBatimentAndRef(this, refEscalier)
                 .map {
-                    beanFactory.getBean(EscalierComponentQuery::class.java, it, beanFactory)
+                    beanFactory.getBean(EscalierComponentQuery::class.java, it)
                 }
     }
 }
