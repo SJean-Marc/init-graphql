@@ -3,4 +3,8 @@
 graphql:
     packages:
         - "fr.prez.graphql.query"
+        - "fr.prez.graphql.mutation"
+        - "fr.prez.graphql.subscription"
         - "fr.prez.graphql.dto"
+    subscriptions:
+      endpoint: event-emitter
