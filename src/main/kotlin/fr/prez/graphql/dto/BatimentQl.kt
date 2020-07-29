@@ -1,6 +1,9 @@
 package fr.prez.graphql.dto
 
-data class BatimentQl(
+import com.expediagroup.graphql.annotations.GraphQLName
+
+@GraphQLName("Batiment")
+open class BatimentQl(
     var id: Long? = null,
     var ref: String? = null
 ) {

@@ -1,6 +1,9 @@
 package fr.prez.graphql.dto
 
-data class EscalierQl(
+import com.expediagroup.graphql.annotations.GraphQLName
+
+@GraphQLName("Escalier")
+open class EscalierQl(
     var id: Long? = null,
     var ref: String? = null
 ){

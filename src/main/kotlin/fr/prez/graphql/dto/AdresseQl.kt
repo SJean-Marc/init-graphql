@@ -1,6 +1,9 @@
 package fr.prez.graphql.dto
 
-data class AdresseQl (
+import com.expediagroup.graphql.annotations.GraphQLName
+
+@GraphQLName("Adresse")
+open class AdresseQl (
         var id: Long?,
         var libelle: String? = null
 ) {

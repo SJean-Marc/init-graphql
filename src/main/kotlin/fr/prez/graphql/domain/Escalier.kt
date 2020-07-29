@@ -10,7 +10,7 @@ import javax.persistence.OneToMany
 import javax.persistence.Table
 
 @Entity
-@Table(name = "t_escalier_esc")
+@Table(name = "t_escalier")
 class Escalier {
     @Id
     var id: Long? = null
